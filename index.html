@@ -1,521 +1,114 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ITECT - Formación Tecnológica</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "secondary-fixed-dim": "#b1c5ff",
-                        "secondary": "#3d5ca2",
-                        "tertiary-container": "#bf3003",
-                        "background": "#f7f9fc",
-                        "surface-dim": "#d8dadd",
-                        "on-secondary-fixed": "#001946",
-                        "on-secondary-fixed-variant": "#224489",
-                        "error": "#ba1a1a",
-                        "outline": "#737688",
-                        "on-primary-fixed-variant": "#0038b6",
-                        "on-surface": "#191c1e",
-                        "tertiary-fixed": "#ffdbd2",
-                        "on-error-container": "#93000a",
-                        "surface-container-highest": "#e0e3e6",
-                        "primary-fixed-dim": "#b7c4ff",
-                        "on-surface-variant": "#434656",
-                        "secondary-fixed": "#dae2ff",
-                        "on-tertiary": "#ffffff",
-                        "on-primary-fixed": "#001452",
-                        "inverse-on-surface": "#eff1f4",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary-fixed-dim": "#ffb4a1",
-                        "inverse-surface": "#2d3133",
-                        "surface-tint": "#004ced",
-                        "primary-fixed": "#dde1ff",
-                        "surface-bright": "#f7f9fc",
-                        "tertiary": "#952200",
-                        "on-secondary-container": "#204287",
-                        "surface-container-low": "#f2f4f7",
-                        "on-tertiary-fixed": "#3c0800",
-                        "outline-variant": "#c3c5d9",
-                        "on-tertiary-container": "#ffddd5",
-                        "on-primary": "#ffffff",
-                        "surface-container": "#eceef1",
-                        "surface": "#f7f9fc",
-                        "on-background": "#191c1e",
-                        "on-primary-container": "#dfe3ff",
-                        "on-error": "#ffffff",
-                        "primary-container": "#0052ff",
-                        "inverse-primary": "#b7c4ff",
-                        "secondary-container": "#94b2fe",
-                        "primary": "#003ec7",
-                        "surface-variant": "#e0e3e6",
-                        "error-container": "#ffdad6",
-                        "on-secondary": "#ffffff",
-                        "on-primary-fixed-variant": "#0038b6",
-                        "surface-container-high": "#e6e8eb"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-desktop": "64px",
-                        "max-width": "1280px",
-                        "margin-mobile": "16px",
-                        "base": "8px",
-                        "gutter": "24px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["JetBrains Mono"],
-                        "body-lg": ["Inter"],
-                        "headline-xl": ["Hanken Grotesk"],
-                        "body-md": ["Inter"],
-                        "headline-lg": ["Hanken Grotesk"],
-                        "headline-xl-mobile": ["Hanken Grotesk"],
-                        "headline-md": ["Hanken Grotesk"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "headline-xl-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-family: 'Material Symbols Outlined';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-            -webkit-font-feature-settings: 'liga';
-            -webkit-font-smoothing: antialiased;
-        }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
-        .grid-pattern {
-            background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(115, 118, 136, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(115, 118, 136, 0.1) 1px, transparent 1px);
-        }
-        .glow-card {
-            box-shadow: 0 0 40px rgba(0, 82, 255, 0.08);
-        }
-        .text-balance {
-            text-wrap: balance;
-        }
-    </style>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITECT - Formación Tecnológica</title>
+  <meta name="description" content="Cursos virtuales con certificación en Tecnología de la Información, desarrollo, diseño gráfico y herramientas digitales." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:Inter,system-ui,sans-serif;background:#f7f9fc;color:#191c1e}.headline{font-family:'Hanken Grotesk',Inter,sans-serif}.mono{font-family:'JetBrains Mono',monospace}.grid-pattern{background-size:40px 40px;background-image:linear-gradient(to right,rgba(115,118,136,.10) 1px,transparent 1px),linear-gradient(to bottom,rgba(115,118,136,.10) 1px,transparent 1px)}.glass{background:rgba(255,255,255,.76);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}.dark-card:hover{box-shadow:0 0 28px rgba(0,82,255,.32);border-color:#0052ff;transform:translateY(-4px)}
+  </style>
 </head>
-<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
-<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm transition-all duration-300" id="topNav">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto h-20">
-<a class="flex items-center gap-2 group" href="#inicio">
-<img alt="ITECT Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkPSd3Imhm5qHFCDztnOFwkBsUVVhWQFCjO5hm9vjRCCeBRZek0ih5Sho8VM4k80G5-vXMWirhB2qeR5BOKa6Tuv9mRRjDjA36pTOHo8Hlxo3vy2jnxhFwOz8B5XGTK7z1m1zx305C94jN6WamEN91vv4qQHoPW-vjiv6OWR6_OykMWqM8FcSkRJQcfpEKMYV2R0"/>
-</a>
-<div class="hidden md:flex items-center gap-6">
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-body-md text-body-md font-medium transition-all hover:opacity-80" href="#inicio">Inicio</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md font-medium hover:bg-primary/5 rounded-lg px-3 py-2 active:scale-95 duration-200" href="#cursos">Cursos</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md font-medium hover:bg-primary/5 rounded-lg px-3 py-2 active:scale-95 duration-200" href="#beneficios">Beneficios</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md font-medium hover:bg-primary/5 rounded-lg px-3 py-2 active:scale-95 duration-200" href="#metodologia">Metodología</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md font-medium hover:bg-primary/5 rounded-lg px-3 py-2 active:scale-95 duration-200" href="#contacto">Contacto</a>
-</div>
-<a class="hidden md:flex bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg active:scale-95 items-center gap-2" href="#inscripcion">
-            Inscríbete
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<button class="md:hidden text-on-surface p-2" id="mobileMenuBtn">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-<div class="hidden md:hidden bg-surface-container-lowest border-b border-outline-variant px-margin-mobile py-4 absolute w-full shadow-lg" id="mobileMenu">
-<div class="flex flex-col gap-4">
-<a class="font-body-md text-on-surface-variant" href="#inicio">Inicio</a>
-<a class="font-body-md text-on-surface-variant" href="#cursos">Cursos</a>
-<a class="font-body-md text-on-surface-variant" href="#beneficios">Beneficios</a>
-<a class="font-body-md text-on-surface-variant" href="#metodologia">Metodología</a>
-<a class="font-body-md text-on-surface-variant" href="#contacto">Contacto</a>
-<a class="bg-primary text-on-primary text-center py-3 rounded-lg font-label-md" href="#inscripcion">Inscríbete</a>
-</div>
-</div>
-</nav>
-<main>
-<section class="relative pt-32 pb-20 md:pt-40 md:pb-32 px-margin-mobile md:px-margin-desktop overflow-hidden grid-pattern" id="inicio">
-<div class="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
-<div class="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary-container/30 rounded-full blur-[80px] pointer-events-none"></div>
-<div class="max-w-max-width mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="flex flex-col gap-8">
-<div class="inline-flex items-center gap-2 bg-surface-container-lowest/90 border border-outline-variant rounded-full px-4 py-2 w-fit shadow-sm">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-</span>
-<span class="font-label-md text-label-md text-primary uppercase tracking-wide">Educación Tecnológica de Vanguardia</span>
-</div>
-<div class="space-y-6">
-<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-background leading-tight text-balance">
-                        Capacítate en tecnología y <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">desbloquea tu potencial digital</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-                        Cursos virtuales con certificación en Tecnología de la Información, desarrollo, diseño gráfico y herramientas digitales, pensados para fortalecer tu perfil profesional desde cualquier lugar.
-                    </p>
-</div>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md px-8 py-4 rounded-xl transition-all shadow-[0_8px_24px_rgba(0,62,199,0.25)] hover:shadow-[0_12px_32px_rgba(0,62,199,0.35)] active:scale-95 flex items-center justify-center gap-2" href="#cursos">
-                        Ver cursos
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<a class="bg-surface-container-lowest border border-outline-variant hover:border-primary text-on-surface font-label-md text-label-md px-8 py-4 rounded-xl transition-all shadow-sm hover:shadow-md active:scale-95 flex items-center justify-center" href="#contacto">
-                        Solicitar información
-                    </a>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-outline-variant/40">
-<div>
-<p class="font-headline-md text-headline-md text-primary">100%</p>
-<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Virtual</p>
-</div>
-<div>
-<p class="font-headline-md text-headline-md text-primary">4+</p>
-<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cursos</p>
-</div>
-<div>
-<p class="font-headline-md text-headline-md text-primary">Cert.</p>
-<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Al finalizar</p>
-</div>
-<div>
-<p class="font-headline-md text-headline-md text-primary">Online</p>
-<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Flexible</p>
-</div>
-</div>
-</div>
-<div class="relative flex justify-center lg:justify-end">
-<div class="absolute inset-0 bg-primary/20 blur-[80px] rounded-full opacity-60"></div>
-<div class="relative glass-panel rounded-3xl border border-white/60 p-6 md:p-8 shadow-[0_24px_80px_rgba(0,20,82,0.12)] hover:shadow-[0_32px_100px_rgba(0,82,255,0.18)] transition-all duration-500 transform hover:-translate-y-2 max-w-md w-full">
-<div class="absolute -top-6 -right-6 bg-primary text-on-primary p-4 rounded-2xl shadow-lg rotate-6 hidden md:block">
-<span class="material-symbols-outlined text-3xl">verified</span>
-</div>
-<img alt="Logo oficial de ITECT" class="w-full h-auto object-contain rounded-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkPSd3Imhm5qHFCDztnOFwkBsUVVhWQFCjO5hm9vjRCCeBRZek0ih5Sho8VM4k80G5-vXMWirhB2qeR5BOKa6Tuv9mRRjDjA36pTOHo8Hlxo3vy2jnxhFwOz8B5XGTK7z1m1zx305C94jN6WamEN91vv4qQHoPW-vjiv6OWR6_OykMWqM8FcSkRJQcfpEKMYV2R0"/>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="cursos">
-<div class="max-w-max-width mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-12">
-<div class="max-w-2xl">
-<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2 block">Catálogo Inicial</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Cursos</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Domina habilidades digitales y tecnológicas con capacitaciones virtuales orientadas al crecimiento profesional.</p>
-</div>
-<div class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">schedule</span>
-                    Próximamente más cursos
-                </div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-6 relative overflow-hidden group dark-card-glow border border-outline/20 transition-all duration-300 hover:-translate-y-1">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
-<div class="relative z-10">
-<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary-fixed group-hover:text-on-primary text-3xl">database</span>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="text-xs font-label-md bg-primary/20 text-primary-fixed px-2 py-1 rounded">Virtual</span>
-<span class="text-xs font-label-md bg-secondary/20 text-secondary-fixed px-2 py-1 rounded">Certificación</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-3">Base de Datos SQL Server</h3>
-<p class="font-body-md text-body-md text-inverse-on-surface/70 mb-6 text-sm">Aprende fundamentos de bases de datos, consultas SQL, organización de información y gestión de datos en entornos empresariales.</p>
-<a class="text-primary-fixed font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#contacto">Solicitar información <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-6 relative overflow-hidden group dark-card-glow border border-outline/20 transition-all duration-300 hover:-translate-y-1">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
-<div class="relative z-10">
-<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary-fixed group-hover:text-on-primary text-3xl">code</span>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="text-xs font-label-md bg-primary/20 text-primary-fixed px-2 py-1 rounded">Virtual</span>
-<span class="text-xs font-label-md bg-secondary/20 text-secondary-fixed px-2 py-1 rounded">Certificación</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-3">Desarrollo Python</h3>
-<p class="font-body-md text-body-md text-inverse-on-surface/70 mb-6 text-sm">Desarrolla lógica de programación, sintaxis básica y aplicaciones prácticas con uno de los lenguajes más versátiles del mundo tecnológico.</p>
-<a class="text-primary-fixed font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#contacto">Solicitar información <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-6 relative overflow-hidden group dark-card-glow border border-outline/20 transition-all duration-300 hover:-translate-y-1">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
-<div class="relative z-10">
-<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary-fixed group-hover:text-on-primary text-3xl">api</span>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="text-xs font-label-md bg-primary/20 text-primary-fixed px-2 py-1 rounded">Virtual</span>
-<span class="text-xs font-label-md bg-secondary/20 text-secondary-fixed px-2 py-1 rounded">Certificación</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-3">Desarrollo FastAPI</h3>
-<p class="font-body-md text-body-md text-inverse-on-surface/70 mb-6 text-sm">Construye APIs modernas, rápidas y escalables utilizando Python y herramientas actuales para desarrollo backend.</p>
-<a class="text-primary-fixed font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#contacto">Solicitar información <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-6 relative overflow-hidden group dark-card-glow border border-outline/20 transition-all duration-300 hover:-translate-y-1">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
-<div class="relative z-10">
-<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary-fixed group-hover:text-on-primary text-3xl">developer_mode</span>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="text-xs font-label-md bg-primary/20 text-primary-fixed px-2 py-1 rounded">Virtual</span>
-<span class="text-xs font-label-md bg-secondary/20 text-secondary-fixed px-2 py-1 rounded">Certificación</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-3">Desarrollo Node.js</h3>
-<p class="font-body-md text-body-md text-inverse-on-surface/70 mb-6 text-sm">Aprende a crear aplicaciones y servicios web modernos utilizando JavaScript del lado del servidor.</p>
-<a class="text-primary-fixed font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#contacto">Solicitar información <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background" id="beneficios">
-<div class="max-w-max-width mx-auto">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2 block">Ventajas</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Beneficios de capacitarte con ITECT</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Aprende de forma flexible, práctica y orientada al mundo digital actual.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:shadow-lg transition-all">
-<span class="material-symbols-outlined text-primary text-4xl mb-4 block">laptop_mac</span>
-<h3 class="font-headline-md text-headline-md mb-3">Modalidad virtual</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Capacítate desde cualquier lugar, sin limitar tu aprendizaje por ubicación.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:shadow-lg transition-all">
-<span class="material-symbols-outlined text-primary text-4xl mb-4 block">workspace_premium</span>
-<h3 class="font-headline-md text-headline-md mb-3">Certificación al finalizar</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Refuerza tu perfil con una certificación que respalde tu participación y aprendizaje.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:shadow-lg transition-all">
-<span class="material-symbols-outlined text-primary text-4xl mb-4 block">update</span>
-<h3 class="font-headline-md text-headline-md mb-3">Formación actualizada</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Accede a contenidos relacionados con tecnología, desarrollo, diseño y herramientas digitales.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:shadow-lg transition-all">
-<span class="material-symbols-outlined text-primary text-4xl mb-4 block">build</span>
-<h3 class="font-headline-md text-headline-md mb-3">Enfoque práctico</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Aprende con una orientación aplicada, pensada para comprender y utilizar lo aprendido.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:shadow-lg transition-all">
-<span class="material-symbols-outlined text-primary text-4xl mb-4 block">schedule</span>
-<h3 class="font-headline-md text-headline-md mb-3">Flexibilidad</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Avanza de una manera más adaptable a tus tiempos y objetivos.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:shadow-lg transition-all">
-<span class="material-symbols-outlined text-primary text-4xl mb-4 block">trending_up</span>
-<h3 class="font-headline-md text-headline-md mb-3">Crecimiento profesional</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Desarrolla habilidades que pueden ayudarte a mejorar tu perfil académico, laboral o independiente.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="metodologia">
-<div class="max-w-max-width mx-auto">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2 block">Proceso</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Aprende con una metodología clara y efectiva</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Un proceso simple para avanzar desde el interés inicial hasta la certificación.</p>
-</div>
-<div class="relative">
-<div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-outline-variant/50 -translate-y-1/2 z-0"></div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
-<div class="bg-surface-container-lowest p-6 rounded-2xl text-center shadow-sm border border-outline-variant">
-<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 font-headline-md text-headline-md shadow-lg">1</div>
-<h3 class="font-headline-md text-headline-md mb-3">Elige tu curso</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Selecciona la capacitación que mejor se adapte a tus intereses y objetivos.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl text-center shadow-sm border border-outline-variant">
-<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 font-headline-md text-headline-md shadow-lg">2</div>
-<h3 class="font-headline-md text-headline-md mb-3">Aprende online</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Accede a una formación virtual flexible y orientada al aprendizaje digital.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl text-center shadow-sm border border-outline-variant">
-<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 font-headline-md text-headline-md shadow-lg">3</div>
-<h3 class="font-headline-md text-headline-md mb-3">Practica</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Aplica los conocimientos mediante ejercicios y contenido orientado al uso real.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl text-center shadow-sm border border-outline-variant">
-<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 font-headline-md text-headline-md shadow-lg">4</div>
-<h3 class="font-headline-md text-headline-md mb-3">Certifícate</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Finaliza tu capacitación y fortalece tu perfil profesional.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background">
-<div class="max-w-max-width mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="bg-primary-fixed p-8 md:p-12 rounded-3xl relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
-<div class="relative z-10">
-<span class="material-symbols-outlined text-primary text-5xl mb-6">hub</span>
-<h2 class="font-headline-lg text-headline-lg text-on-primary-fixed-variant mb-6">Formación tecnológica para el mundo digital</h2>
-<p class="font-body-lg text-body-lg text-on-primary-fixed leading-relaxed">
-                            ITECT nace como una empresa capacitadora enfocada en acercar el conocimiento tecnológico y digital a estudiantes, profesionales y personas que desean fortalecer sus habilidades.
-                        </p>
-</div>
-</div>
-<div class="space-y-6">
-<h3 class="font-headline-md text-headline-md text-on-surface">Una propuesta educativa moderna</h3>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        Su propuesta combina modalidad virtual, contenidos actuales y una orientación clara hacia el crecimiento profesional, permitiendo que cada estudiante avance con una base más sólida en el entorno digital.
-                    </p>
-<div class="grid grid-cols-2 gap-4">
-<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/50">
-<span class="font-label-md text-label-md text-primary uppercase">Innovación</span>
-</div>
-<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/50">
-<span class="font-label-md text-label-md text-primary uppercase">Confianza</span>
-</div>
-<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/50">
-<span class="font-label-md text-label-md text-primary uppercase">Tecnología</span>
-</div>
-<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/50">
-<span class="font-label-md text-label-md text-primary uppercase">Crecimiento</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-inverse-surface text-inverse-on-surface" id="contacto">
-<div class="max-w-max-width mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-<div>
-<span class="font-label-md text-label-md text-primary-fixed uppercase tracking-wider mb-2 block">Contacto</span>
-<h2 class="font-headline-lg text-headline-lg mb-6">Solicita información sobre nuestros cursos</h2>
-<p class="font-body-lg text-body-lg text-surface-variant mb-8">Déjanos tus datos y recibe orientación sobre la capacitación que mejor se adapta a tus objetivos.</p>
-<div class="space-y-4">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined">chat</span></div>
-<span class="font-body-md text-body-md text-surface-variant">WhatsApp: pendiente de confirmar</span>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined">mail</span></div>
-<span class="font-body-md text-body-md text-surface-variant">Correo: pendiente de confirmar</span>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined">schedule</span></div>
-<span class="font-body-md text-body-md text-surface-variant">Horario de atención: pendiente de confirmar</span>
-</div>
-</div>
-</div>
-<div class="bg-surface-container-lowest text-on-surface p-8 rounded-2xl shadow-2xl" id="inscripcion">
-<form class="space-y-5">
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="nombre">Nombre completo</label>
-<input class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary" id="nombre" placeholder="Tu nombre" type="text"/>
-</div>
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="email">Correo electrónico</label>
-<input class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary" id="email" placeholder="correo@ejemplo.com" type="email"/>
-</div>
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="whatsapp">Número de WhatsApp</label>
-<input class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary" id="whatsapp" placeholder="+51 999 999 999" type="tel"/>
-</div>
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="curso">Curso de interés</label>
-<select class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary" id="curso">
-<option>Base de Datos SQL Server</option>
-<option>Desarrollo Python</option>
-<option>Desarrollo FastAPI</option>
-<option>Desarrollo Node.js</option>
-<option>Otro / Solicitar orientación</option>
-</select>
-</div>
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="mensaje">Mensaje</label>
-<textarea class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary" id="mensaje" placeholder="Cuéntanos qué capacitación te interesa" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md py-4 rounded-xl transition-all shadow-lg active:scale-95" type="button">
-                        Enviar solicitud
-                    </button>
-</form>
-</div>
-</div>
-</section>
-<section class="py-20 px-margin-mobile md:px-margin-desktop bg-primary text-on-primary text-center">
-<div class="max-w-4xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg mb-6">Da el siguiente paso en tu crecimiento profesional</h2>
-<p class="font-body-lg text-body-lg text-primary-fixed mb-8 max-w-2xl mx-auto">Descubre el curso ideal para ti y fortalece tus habilidades digitales con ITECT.</p>
-<a class="inline-flex bg-surface text-primary font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-primary-fixed transition-colors shadow-lg" href="#inscripcion">Inscríbete ahora</a>
-</div>
-</section>
-</main>
-<footer class="bg-surface-container-highest py-12 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30">
-<div class="max-w-max-width mx-auto flex flex-col md:flex-row justify-between gap-8 items-center md:items-start">
-<div class="text-center md:text-left max-w-xs">
-<img alt="ITECT Logo" class="h-10 w-auto object-contain mb-4 mx-auto md:mx-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkPSd3Imhm5qHFCDztnOFwkBsUVVhWQFCjO5hm9vjRCCeBRZek0ih5Sho8VM4k80G5-vXMWirhB2qeR5BOKa6Tuv9mRRjDjA36pTOHo8Hlxo3vy2jnxhFwOz8B5XGTK7z1m1zx305C94jN6WamEN91vv4qQHoPW-vjiv6OWR6_OykMWqM8FcSkRJQcfpEKMYV2R0"/>
-<p class="font-body-md text-body-md text-on-surface-variant">Desbloquea tu potencial digital.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-6 font-body-md text-body-md text-on-surface-variant">
-<a class="hover:text-primary" href="#inicio">Inicio</a>
-<a class="hover:text-primary" href="#cursos">Cursos</a>
-<a class="hover:text-primary" href="#beneficios">Beneficios</a>
-<a class="hover:text-primary" href="#metodologia">Metodología</a>
-<a class="hover:text-primary" href="#contacto">Contacto</a>
-</div>
-</div>
-<div class="max-w-max-width mx-auto mt-8 pt-8 border-t border-outline-variant/30 text-center">
-<p class="font-body-md text-body-md text-on-surface-variant">© 2026 ITECT. Todos los derechos reservados. <span class="opacity-70">Sitio web en desarrollo.</span></p>
-</div>
-</footer>
-<script>
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+<body class="overflow-x-hidden">
+  <nav id="topNav" class="fixed top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-md shadow-sm">
+    <div class="mx-auto flex h-20 max-w-[1280px] items-center justify-between px-4 md:px-16">
+      <a href="#inicio" class="flex items-center gap-3">
+        <img src="logo-itect.png" alt="ITECT Logo" class="h-11 w-auto object-contain" />
+      </a>
+      <div class="hidden items-center gap-7 md:flex">
+        <a href="#inicio" class="font-semibold text-blue-700 border-b-2 border-blue-700 pb-1">Inicio</a>
+        <a href="#cursos" class="font-semibold text-slate-700 hover:text-blue-700">Cursos</a>
+        <a href="#beneficios" class="font-semibold text-slate-700 hover:text-blue-700">Beneficios</a>
+        <a href="#metodologia" class="font-semibold text-slate-700 hover:text-blue-700">Metodología</a>
+        <a href="#contacto" class="font-semibold text-slate-700 hover:text-blue-700">Contacto</a>
+      </div>
+      <a href="#inscripcion" class="hidden rounded-xl bg-blue-700 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-blue-800 md:inline-flex">Inscríbete →</a>
+      <button id="mobileMenuBtn" class="md:hidden rounded-lg border border-slate-200 px-3 py-2 font-bold text-slate-700">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-4 py-4 md:hidden">
+      <div class="flex flex-col gap-4 font-semibold text-slate-700">
+        <a href="#inicio">Inicio</a><a href="#cursos">Cursos</a><a href="#beneficios">Beneficios</a><a href="#metodologia">Metodología</a><a href="#contacto">Contacto</a><a href="#inscripcion" class="rounded-xl bg-blue-700 px-5 py-3 text-center text-white">Inscríbete</a>
+      </div>
+    </div>
+  </nav>
 
-        // Close mobile menu on link click
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-        });
+  <main>
+    <section id="inicio" class="grid-pattern relative overflow-hidden px-4 pb-20 pt-32 md:px-16 md:pb-32 md:pt-40">
+      <div class="absolute inset-0 bg-gradient-to-b from-white/75 via-[#f7f9fc]/70 to-[#f7f9fc]"></div>
+      <div class="absolute right-0 top-20 h-[620px] w-[620px] rounded-full bg-blue-500/10 blur-[110px]"></div>
+      <div class="absolute bottom-0 left-0 h-[420px] w-[420px] rounded-full bg-cyan-300/20 blur-[90px]"></div>
+      <div class="relative z-10 mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        <div class="flex flex-col gap-8">
+          <div class="mono inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 bg-white/90 px-4 py-2 text-sm font-bold uppercase tracking-wide text-blue-700 shadow-sm"><span class="h-2 w-2 animate-pulse rounded-full bg-blue-700"></span> Educación tecnológica de vanguardia</div>
+          <div class="space-y-6">
+            <h1 class="headline text-5xl font-black leading-[.98] tracking-[-.04em] text-slate-900 md:text-7xl">Capacítate en tecnología y <span class="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">desbloquea tu potencial digital</span></h1>
+            <p class="max-w-2xl text-lg leading-8 text-slate-600">Cursos virtuales con certificación en Tecnología de la Información, desarrollo, diseño gráfico y herramientas digitales, pensados para fortalecer tu perfil profesional desde cualquier lugar.</p>
+          </div>
+          <div class="flex flex-col gap-4 sm:flex-row">
+            <a href="#cursos" class="rounded-xl bg-blue-700 px-8 py-4 text-center font-bold text-white shadow-[0_8px_24px_rgba(0,62,199,.25)] transition hover:bg-blue-800">Ver cursos →</a>
+            <a href="#contacto" class="rounded-xl border border-slate-300 bg-white px-8 py-4 text-center font-bold text-slate-800 shadow-sm transition hover:border-blue-700">Solicitar información</a>
+          </div>
+          <div class="grid grid-cols-2 gap-4 border-t border-slate-300/70 pt-6 md:grid-cols-4">
+            <div><p class="headline text-3xl font-black text-blue-700">100%</p><p class="mono text-xs font-bold uppercase tracking-wider text-slate-600">Virtual</p></div>
+            <div><p class="headline text-3xl font-black text-blue-700">4+</p><p class="mono text-xs font-bold uppercase tracking-wider text-slate-600">Cursos</p></div>
+            <div><p class="headline text-3xl font-black text-blue-700">Cert.</p><p class="mono text-xs font-bold uppercase tracking-wider text-slate-600">Al finalizar</p></div>
+            <div><p class="headline text-3xl font-black text-blue-700">Online</p><p class="mono text-xs font-bold uppercase tracking-wider text-slate-600">Flexible</p></div>
+          </div>
+        </div>
+        <div class="relative flex justify-center lg:justify-end">
+          <div class="absolute inset-0 rounded-full bg-blue-500/20 opacity-70 blur-[90px]"></div>
+          <div class="glass relative w-full max-w-md rounded-3xl border border-white/70 p-6 shadow-[0_24px_80px_rgba(0,20,82,.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_32px_100px_rgba(0,82,255,.18)] md:p-8">
+            <div class="absolute -right-6 -top-6 hidden rotate-6 rounded-2xl bg-blue-700 p-4 text-white shadow-lg md:block">✓</div>
+            <img src="logo-itect.png" alt="Logo oficial de ITECT" class="h-auto w-full rounded-2xl object-contain" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // Nav Scroll Effect
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('topNav');
-            if (window.scrollY > 20) {
-                nav.classList.add('shadow-md');
-                nav.classList.replace('bg-surface/80', 'bg-surface/95');
-            } else {
-                nav.classList.remove('shadow-md');
-                nav.classList.replace('bg-surface/95', 'bg-surface/80');
-            }
-        });
-    </script>
-</body></html>
+    <section id="cursos" class="bg-white px-4 py-24 md:px-16">
+      <div class="mx-auto max-w-[1280px]">
+        <div class="mb-12 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
+          <div class="max-w-2xl"><span class="mono mb-2 block text-sm font-bold uppercase tracking-wider text-blue-700">Catálogo inicial</span><h2 class="headline mb-4 text-4xl font-black text-slate-900 md:text-5xl">Nuestros Cursos</h2><p class="text-lg text-slate-600">Domina habilidades digitales y tecnológicas con capacitaciones virtuales orientadas al crecimiento profesional.</p></div>
+          <div class="rounded-full bg-blue-100 px-4 py-2 text-sm font-bold text-blue-800">Próximamente más cursos</div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <article class="dark-card relative overflow-hidden rounded-2xl border border-slate-700/40 bg-[#2d3133] p-6 text-white transition duration-300"><div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-600/20 blur-3xl"></div><div class="relative"><div class="mb-6 grid h-14 w-14 place-items-center rounded-xl bg-blue-600/20 text-3xl">▣</div><div class="mb-4 flex gap-2"><span class="rounded bg-blue-600/20 px-2 py-1 text-xs font-bold text-blue-200">Virtual</span><span class="rounded bg-cyan-400/20 px-2 py-1 text-xs font-bold text-cyan-200">Certificación</span></div><h3 class="headline mb-3 text-2xl font-bold">Base de Datos SQL Server</h3><p class="mb-6 text-sm leading-6 text-slate-300">Aprende fundamentos de bases de datos, consultas SQL, organización de información y gestión de datos en entornos empresariales.</p><a href="#contacto" class="font-bold text-blue-200">Solicitar información →</a></div></article>
+          <article class="dark-card relative overflow-hidden rounded-2xl border border-slate-700/40 bg-[#2d3133] p-6 text-white transition duration-300"><div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-600/20 blur-3xl"></div><div class="relative"><div class="mb-6 grid h-14 w-14 place-items-center rounded-xl bg-blue-600/20 text-3xl">&lt;/&gt;</div><div class="mb-4 flex gap-2"><span class="rounded bg-blue-600/20 px-2 py-1 text-xs font-bold text-blue-200">Virtual</span><span class="rounded bg-cyan-400/20 px-2 py-1 text-xs font-bold text-cyan-200">Certificación</span></div><h3 class="headline mb-3 text-2xl font-bold">Desarrollo Python</h3><p class="mb-6 text-sm leading-6 text-slate-300">Desarrolla lógica de programación, sintaxis básica y aplicaciones prácticas con uno de los lenguajes más versátiles.</p><a href="#contacto" class="font-bold text-blue-200">Solicitar información →</a></div></article>
+          <article class="dark-card relative overflow-hidden rounded-2xl border border-slate-700/40 bg-[#2d3133] p-6 text-white transition duration-300"><div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-600/20 blur-3xl"></div><div class="relative"><div class="mb-6 grid h-14 w-14 place-items-center rounded-xl bg-blue-600/20 text-3xl">API</div><div class="mb-4 flex gap-2"><span class="rounded bg-blue-600/20 px-2 py-1 text-xs font-bold text-blue-200">Virtual</span><span class="rounded bg-cyan-400/20 px-2 py-1 text-xs font-bold text-cyan-200">Certificación</span></div><h3 class="headline mb-3 text-2xl font-bold">Desarrollo FastAPI</h3><p class="mb-6 text-sm leading-6 text-slate-300">Construye APIs modernas, rápidas y escalables utilizando Python y herramientas actuales para backend.</p><a href="#contacto" class="font-bold text-blue-200">Solicitar información →</a></div></article>
+          <article class="dark-card relative overflow-hidden rounded-2xl border border-slate-700/40 bg-[#2d3133] p-6 text-white transition duration-300"><div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-600/20 blur-3xl"></div><div class="relative"><div class="mb-6 grid h-14 w-14 place-items-center rounded-xl bg-blue-600/20 text-3xl">JS</div><div class="mb-4 flex gap-2"><span class="rounded bg-blue-600/20 px-2 py-1 text-xs font-bold text-blue-200">Virtual</span><span class="rounded bg-cyan-400/20 px-2 py-1 text-xs font-bold text-cyan-200">Certificación</span></div><h3 class="headline mb-3 text-2xl font-bold">Desarrollo Node.js</h3><p class="mb-6 text-sm leading-6 text-slate-300">Aprende a crear aplicaciones y servicios web modernos utilizando JavaScript del lado del servidor.</p><a href="#contacto" class="font-bold text-blue-200">Solicitar información →</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="px-4 py-24 md:px-16">
+      <div class="mx-auto max-w-[1280px]"><div class="mx-auto mb-16 max-w-3xl text-center"><span class="mono mb-2 block text-sm font-bold uppercase tracking-wider text-blue-700">Ventajas</span><h2 class="headline mb-4 text-4xl font-black text-slate-900 md:text-5xl">Beneficios de capacitarte con ITECT</h2><p class="text-lg text-slate-600">Aprende de forma flexible, práctica y orientada al mundo digital actual.</p></div>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl"><div class="mb-4 text-4xl text-blue-700">💻</div><h3 class="headline mb-3 text-2xl font-bold">Modalidad virtual</h3><p class="text-slate-600">Capacítate desde cualquier lugar, sin limitar tu aprendizaje por ubicación.</p></div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl"><div class="mb-4 text-4xl text-blue-700">🏅</div><h3 class="headline mb-3 text-2xl font-bold">Certificación al finalizar</h3><p class="text-slate-600">Refuerza tu perfil con una certificación que respalde tu participación y aprendizaje.</p></div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl"><div class="mb-4 text-4xl text-blue-700">🔄</div><h3 class="headline mb-3 text-2xl font-bold">Formación actualizada</h3><p class="text-slate-600">Accede a contenidos relacionados con tecnología, desarrollo, diseño y herramientas digitales.</p></div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl"><div class="mb-4 text-4xl text-blue-700">🛠️</div><h3 class="headline mb-3 text-2xl font-bold">Enfoque práctico</h3><p class="text-slate-600">Aprende con una orientación aplicada, pensada para comprender y utilizar lo aprendido.</p></div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl"><div class="mb-4 text-4xl text-blue-700">⏱️</div><h3 class="headline mb-3 text-2xl font-bold">Flexibilidad</h3><p class="text-slate-600">Avanza de una manera más adaptable a tus tiempos y objetivos.</p></div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl"><div class="mb-4 text-4xl text-blue-700">📈</div><h3 class="headline mb-3 text-2xl font-bold">Crecimiento profesional</h3><p class="text-slate-600">Desarrolla habilidades que pueden ayudarte a mejorar tu perfil académico, laboral o independiente.</p></div>
+      </div></div>
+    </section>
+
+    <section id="metodologia" class="bg-slate-100 px-4 py-24 md:px-16"><div class="mx-auto max-w-[1280px]"><div class="mx-auto mb-16 max-w-3xl text-center"><span class="mono mb-2 block text-sm font-bold uppercase tracking-wider text-blue-700">Proceso</span><h2 class="headline mb-4 text-4xl font-black text-slate-900 md:text-5xl">Aprende con una metodología clara y efectiva</h2><p class="text-lg text-slate-600">Un proceso simple para avanzar desde el interés inicial hasta la certificación.</p></div><div class="grid grid-cols-1 gap-8 md:grid-cols-4"><div class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"><div class="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-blue-700 text-2xl font-black text-white">1</div><h3 class="headline mb-3 text-2xl font-bold">Elige tu curso</h3><p class="text-slate-600">Selecciona la capacitación que mejor se adapte a tus objetivos.</p></div><div class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"><div class="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-blue-700 text-2xl font-black text-white">2</div><h3 class="headline mb-3 text-2xl font-bold">Aprende online</h3><p class="text-slate-600">Accede a formación virtual flexible y orientada al aprendizaje digital.</p></div><div class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"><div class="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-blue-700 text-2xl font-black text-white">3</div><h3 class="headline mb-3 text-2xl font-bold">Practica</h3><p class="text-slate-600">Aplica los conocimientos mediante ejercicios y contenido útil.</p></div><div class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"><div class="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-blue-700 text-2xl font-black text-white">4</div><h3 class="headline mb-3 text-2xl font-bold">Certifícate</h3><p class="text-slate-600">Finaliza tu capacitación y fortalece tu perfil profesional.</p></div></div></div></section>
+
+    <section class="px-4 py-24 md:px-16"><div class="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-16 lg:grid-cols-2"><div class="relative overflow-hidden rounded-3xl bg-blue-100 p-8 md:p-12"><div class="absolute right-0 top-0 h-64 w-64 rounded-full bg-blue-700/20 blur-3xl"></div><div class="relative"><div class="mb-6 text-5xl text-blue-700">◎</div><h2 class="headline mb-6 text-4xl font-black text-blue-950">Formación tecnológica para el mundo digital</h2><p class="text-lg leading-8 text-blue-950/80">ITECT nace como una empresa capacitadora enfocada en acercar el conocimiento tecnológico y digital a estudiantes, profesionales y personas que desean fortalecer sus habilidades.</p></div></div><div class="space-y-6"><h3 class="headline text-3xl font-bold text-slate-900">Una propuesta educativa moderna</h3><p class="text-lg leading-8 text-slate-600">Su propuesta combina modalidad virtual, contenidos actuales y una orientación clara hacia el crecimiento profesional, permitiendo que cada estudiante avance con una base más sólida en el entorno digital.</p><div class="grid grid-cols-2 gap-4"><div class="rounded-xl border border-slate-200 bg-slate-100 p-4"><span class="mono font-bold uppercase text-blue-700">Innovación</span></div><div class="rounded-xl border border-slate-200 bg-slate-100 p-4"><span class="mono font-bold uppercase text-blue-700">Confianza</span></div><div class="rounded-xl border border-slate-200 bg-slate-100 p-4"><span class="mono font-bold uppercase text-blue-700">Tecnología</span></div><div class="rounded-xl border border-slate-200 bg-slate-100 p-4"><span class="mono font-bold uppercase text-blue-700">Crecimiento</span></div></div></div></div></section>
+
+    <section id="contacto" class="bg-[#2d3133] px-4 py-24 text-white md:px-16"><div class="mx-auto grid max-w-[1280px] grid-cols-1 items-start gap-16 lg:grid-cols-2"><div><span class="mono mb-2 block text-sm font-bold uppercase tracking-wider text-blue-200">Contacto</span><h2 class="headline mb-6 text-4xl font-black md:text-5xl">Solicita información sobre nuestros cursos</h2><p class="mb-8 text-lg leading-8 text-slate-300">Déjanos tus datos y recibe orientación sobre la capacitación que mejor se adapta a tus objetivos.</p><div class="space-y-4 text-slate-300"><p>💬 WhatsApp: pendiente de confirmar</p><p>✉️ Correo: pendiente de confirmar</p><p>🕒 Horario de atención: pendiente de confirmar</p></div></div><div id="inscripcion" class="rounded-2xl bg-white p-8 text-slate-900 shadow-2xl"><form class="space-y-5"><input class="w-full rounded-lg border border-slate-300 p-3" placeholder="Nombre completo" type="text"><input class="w-full rounded-lg border border-slate-300 p-3" placeholder="Correo electrónico" type="email"><input class="w-full rounded-lg border border-slate-300 p-3" placeholder="Número de WhatsApp" type="tel"><select class="w-full rounded-lg border border-slate-300 p-3"><option>Base de Datos SQL Server</option><option>Desarrollo Python</option><option>Desarrollo FastAPI</option><option>Desarrollo Node.js</option><option>Otro / Solicitar orientación</option></select><textarea class="w-full rounded-lg border border-slate-300 p-3" rows="4" placeholder="Cuéntanos qué capacitación te interesa"></textarea><button type="button" class="w-full rounded-xl bg-blue-700 py-4 font-bold text-white shadow-lg transition hover:bg-blue-800">Enviar solicitud</button></form></div></div></section>
+
+    <section class="bg-blue-700 px-4 py-20 text-center text-white md:px-16"><div class="mx-auto max-w-4xl"><h2 class="headline mb-6 text-4xl font-black md:text-5xl">Da el siguiente paso en tu crecimiento profesional</h2><p class="mx-auto mb-8 max-w-2xl text-lg text-blue-100">Descubre el curso ideal para ti y fortalece tus habilidades digitales con ITECT.</p><a href="#inscripcion" class="inline-flex rounded-xl bg-white px-8 py-4 font-bold text-blue-700 shadow-lg transition hover:bg-blue-50">Inscríbete ahora</a></div></section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-slate-100 px-4 py-12 md:px-16"><div class="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-8 md:flex-row md:items-start"><div class="max-w-xs text-center md:text-left"><img src="logo-itect.png" alt="ITECT Logo" class="mx-auto mb-4 h-12 w-auto object-contain md:mx-0"><p class="text-slate-600">Desbloquea tu potencial digital.</p></div><div class="flex flex-wrap justify-center gap-6 font-semibold text-slate-600"><a href="#inicio" class="hover:text-blue-700">Inicio</a><a href="#cursos" class="hover:text-blue-700">Cursos</a><a href="#beneficios" class="hover:text-blue-700">Beneficios</a><a href="#metodologia" class="hover:text-blue-700">Metodología</a><a href="#contacto" class="hover:text-blue-700">Contacto</a></div></div><div class="mx-auto mt-8 max-w-[1280px] border-t border-slate-300 pt-8 text-center text-slate-500">© 2026 ITECT. Todos los derechos reservados. Sitio web en desarrollo.</div></footer>
+
+  <script>
+    const btn=document.getElementById('mobileMenuBtn');const menu=document.getElementById('mobileMenu');btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.add('hidden')));window.addEventListener('scroll',()=>{const nav=document.getElementById('topNav');if(window.scrollY>20){nav.classList.add('shadow-md')}else{nav.classList.remove('shadow-md')}});
+  </script>
+</body>
+</html>
